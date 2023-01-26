@@ -16,6 +16,23 @@ function busca(input_field, div) {
     }
 }
 
+var redirectTime = 3600000;
+
+setTimeout(function(){
+    window.location.href = 'index.html';
+}, redirectTime);
+
+var startTime = new Date();
+
+setInterval(function(){
+   var currentTime = new Date();
+   var timePassed = currentTime - startTime;
+   if (timePassed >= 3600000) {
+      window.location.href = '/nova-pagina';
+   }
+}, 1000);
+
+
 function buttonUpper(){
     window.scrollTo({
         top: 0,
