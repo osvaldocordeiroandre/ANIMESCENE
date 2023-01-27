@@ -27,8 +27,8 @@ var startTime = new Date();
 setInterval(function(){
    var currentTime = new Date();
    var timePassed = currentTime - startTime;
-   if (timePassed >= 3600000) {
-      window.location.href = '/nova-pagina';
+   if (timePassed >= 1200) {
+      window.location.href = 'index.html';
    }
 }, 1000);
 
