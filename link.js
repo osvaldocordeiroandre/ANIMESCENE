@@ -27,7 +27,7 @@ var startTime = new Date();
 setInterval(function(){
    var currentTime = new Date();
    var timePassed = currentTime - startTime;
-   if (timePassed >= 1200) {
+   if (timePassed >= 360000 ) {
       window.location.href = 'index.html';
    }
 }, 1000);
